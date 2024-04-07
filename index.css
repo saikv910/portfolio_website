@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.portfolio-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.navlist{
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+}
+
+.navlist{
+    list-style: none;
+}
+
+.navlist li a{
+    text-decoration: none;
+    text-transform:uppercase;
+    font-size: 1rem;
+    color:#fff;
+    position: relative;
+
+}
+.left-container,.right-container{
+    height:100vh;
+    display: flex;
+    align-items: center;
+}
+.left-container{
+    background: #100808;
+    width: 75%;
+    padding-left: 3rem;
+}
+
+.right-container{
+    background: linear-gradient(-45deg, rgba(238, 70, 104, 0.811),black);
+    width: 28%
+}
+
+.icons .fa-brands{
+    color: #bbbb;
+    font-size: 1.7rem;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.content{
+    color: #969696;
+    margin-left: 4rem;
+}
+
+.content .intro{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.content .intro span{
+    color: rgba(238, 70, 104, 0.811);
+}
+.content h1{
+    font-size: 4rem;
+    color: rgba(238, 70, 104, 0.811);
+}
+
+.content .detail{
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.5rem;
+}
+
+.btn-container button{
+    border: 1rem rgba(238, 70, 104, 0.811);
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:nth-child(1){
+    background: rgba(238, 70, 104, 0.811);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:nth-child(2){
+    background: rgba(238, 70, 104, 0.811);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+button:hover{
+    background: #fff;
+    color:rgba(238, 70, 104, 0.811);
+}
+
+.icons .fa-brands{
+    cursor: pointer;
+    background: linear-gradient(#a19f9f,#a19f9f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 72%;
+    transform: translate(-50%,-50%);
+}
+
+.circle:nth-child(1){
+    background: linear-gradient(90deg,transparent 50%,black 50%);
+    width: 38rem;
+}
+.circle:nth-child(2){
+    width: 30rem;
+    background-image: url("./43650.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 1rem #fff, inset 0 0 1rem #fff, 0 0 1rem rgba(238, 70, 104, 0.811);  
+}
+
+.navlist li a::after{
+    content: "";
+    position: absolute;
+    background: white;
+    height: .1rem;
+    width: 100%;
+    left: 0;
+    bottom:-5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s;
+
+}
+
+.navlist li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
